@@ -1,0 +1,7 @@
+.coffee-container{
+    font-size: 40 px;
+    border-bottom : 3px solid blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
