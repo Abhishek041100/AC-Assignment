@@ -4,10 +4,13 @@ import { CoffeeListComponent } from './coffeeList.component';
 import { CoffeeService } from '../services/coffee.service';
 import { StoreModule } from '@ngrx/store';
 import { coffeeReducers } from '../store/reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { CoffeesEffects } from '../store/effects';
 
 @NgModule({
     declarations: [CoffeeListComponent],
-    imports: [CommonModule], //StoreModule.forFeatures({coffees: coffeeReducers })],
+    imports: [CommonModule, EffectsModule.forFeature([CoffeesEffects])],
+     //StoreModule.forFeatures({coffees: coffeeReducers })],
     providers:[CoffeeService],
     exports:[CoffeeListComponent]
 })

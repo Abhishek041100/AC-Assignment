@@ -4,9 +4,9 @@
 export interface CoffeeInterface{
     id: any;
     uid: any;
-    blend_name: "string";
-    origin: "string";
-    variety: "string";
-    notes: "string";
-    intensifier: "string";
+    blend_name: string;
+    origin: string;
+    variety: string;
+    notes: string;
+    intensifier: string;
 }

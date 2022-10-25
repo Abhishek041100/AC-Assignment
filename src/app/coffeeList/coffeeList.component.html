@@ -1,3 +1,28 @@
-<div class="coffee-container"> Types of coffee</div>
+<div class="coffee-container">
+  <h3>Types of coffee</h3>
 
-<div *ngIf="getCoffees$ | async">Coffee is here</div>
+  <table class="table table-striped" *ngIf="coffee | async as coffees">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>uid</th>
+        <th>blend_name</th>
+        <th>Origin</th>
+        <th>Variety</th>
+        <th>Notes</th>
+        <th>Intensifier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cof of coffees">
+        <td>{{ cof.id }}</td>
+        <td>{{ cof.uid }}</td>
+        <td>{{ cof.blend_name }}</td>
+        <td>{{ cof.origin }}</td>
+        <td>{{ cof.variety }}</td>
+        <td>{{ cof.notes }}</td>
+        <td>{{ cof.intensifier }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

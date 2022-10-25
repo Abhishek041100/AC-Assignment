@@ -17,13 +17,14 @@ import * as CoffeeActions from './actions';
 
 export const initialState: AppStateInterface = {
     //isLoading: false,
-    coffees: [],
+    coffee: [],
+    //coffees: [],
     //error: null,
 };
 // Gets the original state duplicated back using a spread operator
 export const coffeeReducers = createReducer(
     initialState,on(CoffeeActions.getCoffeeList,(state) => ({...state, isLoading: true})),
-    on(CoffeeActions.getCoffeeSuccess,(state, content) => ({...state, isLoading: false, coffees: content.coffee}))
+    on(getCoffeeSuccess,(state, action) => ({...state, coffee: action.coffee, /*coffees: action.coffee*/}))
     //on(CoffeeActions.getCoffeeFailure,(state, content) => ({...state, isLoading: false, }))
 );
 //Supplying the initial state and adding the new coffees to the coffees array.

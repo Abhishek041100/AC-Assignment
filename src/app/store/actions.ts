@@ -6,11 +6,17 @@ import {CoffeeInterface} from '../types/coffee.interface';
 
 //export const getCoffeeFailure = createAction('[Coffee] Get Coffee Failure, 
 //  props<{ error: string}>());')
+
+export const GET_COFFEE_SUCCESS = '[Coffee] Get Coffee success';
+//export const GET_COFFEE_LIST = '[List of Products/API] Get Coffee List';
+export const GET_COFFEE_LIST = '[Coffee] Get Coffee list';
+
 export const getCoffeeSuccess = createAction(
-    '[Coffee] Get Coffee success', 
+    GET_COFFEE_SUCCESS, 
     props<{ coffee: CoffeeInterface[]}>()
 );
 export const getCoffeeList = createAction(
-    '[List of Products/API] Get Coffee List', 
-    props<{coffee: CoffeeInterface[]}>()
+    GET_COFFEE_LIST, 
+    //props<{coffee: CoffeeInterface[]}>()
+    
 );

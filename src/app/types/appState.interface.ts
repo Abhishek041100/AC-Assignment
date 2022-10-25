@@ -4,5 +4,6 @@
 import { CoffeeInterface } from "./coffee.interface";
 
 export interface AppStateInterface {
-    coffees: CoffeeInterface[];
+    //coffee
+    coffee: CoffeeInterface[];
 }
