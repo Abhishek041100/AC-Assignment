@@ -1,0 +1,41 @@
+#page {
+    background-color: rgba(0, 128, 0, 0.3);
+  }
+ 
+ h3 {
+    color: dodgerblue;
+    text-align: center;
+    font-size: 30pt;
+ }
+ 
+ #coffeeTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    align-self: center;
+  }
+
+  #coffeeTable td, #coffeeTable th {
+    border: 1px solid rgb(234, 204, 7);
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #coffeeTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #coffeeTable tr:hover {background-color: #ddd;}
+  
+  #coffeeTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+  }
