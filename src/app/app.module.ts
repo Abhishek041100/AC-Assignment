@@ -1,3 +1,7 @@
+/*** All code has been written and compiled solely under individual input
+ * and has been created with the help of the learning resources and link provided below. 
+ * source: https://youtu.be/LIHaX4va3uI ***/ 
+ 
 import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { appReducer } from './store/app.state';
